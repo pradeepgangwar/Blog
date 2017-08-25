@@ -1,5 +1,5 @@
 {
-    "url": "http://pradeepgangwar.tech/Blog",
+
     "database": {
         "client": "sqlite3",
         "connection": {
