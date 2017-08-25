@@ -1,4 +1,6 @@
 {
+    "url" : "http://pradeepgangwar.tech/blog",
+    
     "database": {
         "client": "mysql",
         "connection": {

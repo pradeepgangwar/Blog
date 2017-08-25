@@ -87,6 +87,7 @@
     "semver": "5.4.1",
     "simple-dom": "0.3.2",
     "simple-html-tokenizer": "0.4.1",
+    "sqlite3": "^3.1.8",
     "superagent": "3.5.2",
     "unidecode": "0.1.8",
     "uuid": "3.1.0",

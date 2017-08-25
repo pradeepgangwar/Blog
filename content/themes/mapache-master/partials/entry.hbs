@@ -1,0 +1,25 @@
+{{!-- Entry template --}}
+<article class="entry u-b-b entry-pagination">
+    <div class="row">
+        {{#if feature_image}}
+        <figure class="col s12 entry-image">
+            <a class="entry-image--link" href="{{url}}" style="background-color:#f0f0f0">
+                <span class="lazy entry-image--bg" data-original="{{feature_image}}"></span>
+                {{#has tag="#video-post-format"}}<span class="entry-video-play i-play"></span>{{/has}}
+            </a>
+        </figure>
+        {{/if}}
+
+        <div class="col s12 {{#if feature_image}}entry-body{{/if}}">
+            {{#if tags}}<div class="entry-category">{{tags limit="1"}}</div>{{/if}}
+            <h2 class="entry-title"><a href="{{url}}" title="{{title}}">{{title}}</a></h2>
+
+            <div class="entry-byline">
+                {{#author}} By <a class="entry-author" href="{{url}}">{{name}}</a> <span style="margin: 0 5px">/</span> {{/author}}
+                <time class="entry-timeago timestamp" datetime="{{date format='YYYY-MM-DD'}}">{{date published_at timeago="true"}}</time>
+            </div>
+
+            <div class="entry-excerpt u-h-b-lg">{{excerpt words="15"}}</div>
+        </div>
+    </div>
+</article>
